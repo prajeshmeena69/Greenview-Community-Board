@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Important Contacts - Greenview Community</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>🏘️ Greenview Community Board</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="marketplace.html">Marketplace</a></li>
+          <li><a href="contacts.html" class="active">Contacts</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h2>📞 Important Contacts</h2>
+      <p>Essential numbers and contacts for community services</p>
+    </section>
+
+    <section class="admin-section">
+      <button id="adminBtn" class="admin-btn">Admin Login</button>
+      <div id="adminPanel" class="admin-panel hidden">
+        <h3>Add New Contact</h3>
+        <form id="contactForm">
+          <input type="text" id="contactName" placeholder="Contact Name/Service" required />
+          <input type="tel" id="contactPhone" placeholder="Phone Number" required />
+          <input type="email" id="contactEmail" placeholder="Email (optional)" />
+          <select id="contactCategory" required>
+            <option value="">Select Category</option>
+            <option value="emergency">Emergency</option>
+            <option value="management">Management</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="utilities">Utilities</option>
+            <option value="security">Security</option>
+            <option value="medical">Medical</option>
+          </select>
+          <textarea id="contactNotes" placeholder="Additional notes or timings..."></textarea>
+          <button type="submit">Add Contact</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="emergency-contacts">
+      <h2>🚨 Emergency Contacts</h2>
+      <div class="contacts-grid emergency">
+        <div class="contact-card urgent">
+          <div class="contact-icon">🚔</div>
+          <h3>Police</h3>
+          <div class="contact-details">
+            <a href="tel:100" class="phone-number">100</a>
+            <p>24/7 Emergency Police Service</p>
+          </div>
+        </div>
+
+        <div class="contact-card urgent">
+          <div class="contact-icon">🚑</div>
+          <h3>Ambulance</h3>
+          <div class="contact-details">
+            <a href="tel:108" class="phone-number">108</a>
+            <p>24/7 Emergency Medical Service</p>
+          </div>
+        </div>
+
+        <div class="contact-card urgent">
+          <div class="contact-icon">🚒</div>
+          <h3>Fire Brigade</h3>
+          <div class="contact-details">
+            <a href="tel:101" class="phone-number">101</a>
+            <p>Fire Emergency &amp; Rescue</p>
+          </div>
+        </div>
+
+        <div class="contact-card urgent">
+          <div class="contact-icon">⚡</div>
+          <h3>Electricity Board</h3>
+          <div class="contact-details">
+            <a href="tel:1912" class="phone-number">1912</a>
+            <p>Power outage complaints</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-contacts">
+      <h2>🏘️ Community Management</h2>
+      <div id="managementContacts" class="contacts-list">
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>Society Manager</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+917890123456">+91 7890123456</a></span>
+              <span class="email">✉️ manager@greenviewcommunity.com</span>
+            </div>
+            <p class="timing">Available: Mon-Sat, 9 AM - 6 PM</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>Security Office</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+917890123457">+91 7890123457</a></span>
+            </div>
+            <p class="timing">Available: 24/7</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>Maintenance Team</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+917890123458">+91 7890123458</a></span>
+            </div>
+            <p class="timing">Available: Mon-Sat, 8 AM - 5 PM</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>Accounts Department</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+917890123459">+91 7890123459</a></span>
+              <span class="email">✉️ accounts@greenviewcommunity.com</span>
+            </div>
+            <p class="timing">Available: Mon-Fri, 10 AM - 4 PM</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-contacts">
+      <h2>🔧 Service Providers</h2>
+      <div class="contacts-tabs">
+        <button class="tab-btn active" data-tab="utilities">Utilities</button>
+        <button class="tab-btn" data-tab="medical">Medical</button>
+        <button class="tab-btn" data-tab="delivery">Delivery</button>
+      </div>
+
+      <div id="utilities" class="tab-content active">
+        <div class="contacts-list">
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Water Supply Office</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567890">+91 1234567890</a></span>
+              </div>
+              <p class="timing">Mon-Fri, 9 AM - 5 PM</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Gas Connection</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567891">+91 1234567891</a></span>
+              </div>
+              <p class="timing">Mon-Sat, 8 AM - 6 PM</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Internet Service (Local ISP)</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567892">+91 1234567892</a></span>
+              </div>
+              <p class="timing">24/7 Support</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="medical" class="tab-content">
+        <div class="contacts-list">
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Dr. Sharma (General Physician)</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567893">+91 1234567893</a></span>
+              </div>
+              <p class="timing">Mon-Sat, 10 AM - 2 PM, 6 PM - 9 PM</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>City Hospital</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567894">+91 1234567894</a></span>
+              </div>
+              <p class="timing">24/7 Emergency</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Apollo Pharmacy</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567895">+91 1234567895</a></span>
+              </div>
+              <p class="timing">Daily, 8 AM - 11 PM</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="delivery" class="tab-content">
+        <div class="contacts-list">
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Local Grocery Store</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567896">+91 1234567896</a></span>
+              </div>
+              <p class="timing">Daily, 7 AM - 10 PM | Home delivery available</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Milk Delivery</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567897">+91 1234567897</a></span>
+              </div>
+              <p class="timing">Daily delivery at 6 AM</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-info">
+              <h3>Laundry Service</h3>
+              <div class="contact-details">
+                <span class="phone">📞 <a href="tel:+911234567898">+91 1234567898</a></span>
+              </div>
+              <p class="timing">Pickup: Mon, Wed, Fri | Delivery: Next day</p>
+            </div>
+            <button class="contact-btn">Call Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resident-directory">
+      <h2>🏠 Resident Committee</h2>
+      <div class="contacts-list">
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>President - Mr. Rajesh Kumar</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+911234567899">+91 1234567899</a></span>
+              <span class="email">✉️ president@residents.com</span>
+            </div>
+            <p class="timing">Apartment 401 | Available evenings</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>Secretary - Mrs. Priya Singh</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+911234567800">+91 1234567800</a></span>
+            </div>
+            <p class="timing">Apartment 205 | Available weekends</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-info">
+            <h3>Treasurer - Mr. Amit Patel</h3>
+            <div class="contact-details">
+              <span class="phone">📞 <a href="tel:+911234567801">+91 1234567801</a></span>
+            </div>
+            <p class="timing">Apartment 102 | Available mornings</p>
+          </div>
+          <button class="contact-btn">Call Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-guidelines">
+      <h2>📋 Contact Guidelines</h2>
+      <div class="guidelines-grid">
+        <div class="guideline-item">
+          <h3>🕒 Respect Timings</h3>
+          <p>Please call only during mentioned available hours</p>
+        </div>
+        <div class="guideline-item">
+          <h3>🚨 Emergency Only</h3>
+          <p>Use emergency numbers only for genuine emergencies</p>
+        </div>
+        <div class="guideline-item">
+          <h3>📝 Keep Records</h3>
+          <p>Note down complaint/service request numbers</p>
+        </div>
+        <div class="guideline-item">
+          <h3>🤝 Be Courteous</h3>
+          <p>Maintain respectful communication with all service providers</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Greenview Community. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
