@@ -2,6 +2,11 @@
 
 A modern, responsive web application for community management that enables residents to stay connected through announcements, events, marketplace listings, and important contacts.
 
+## 🌐 Live Website
+
+👉 **Visit the live site:**  
+🔗 https://prajeshmeena69.github.io/Greenview-Community-Board/
+
 ## ✨ Features
 
 ### 🏠 Home Page
